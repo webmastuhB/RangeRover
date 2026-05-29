@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Land Rover For Sale | Like New Condition | 148,100 Miles | $58,000</title>
+    <meta name="description" content="Land Rover for sale in like new condition with 148,100 miles. Asking price is $58,000. Clean, stylish, and ready for its next owner." />
+    <meta name="keywords" content="Land Rover for sale, used Land Rover, Land Rover SUV, like new Land Rover, Land Rover 148100 miles, Land Rover $58000" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://example.com/land-rover-for-sale" />
+
+    <meta property="og:title" content="Land Rover For Sale - Like New Condition" />
+    <meta property="og:description" content="Land Rover for sale with 148,100 miles in like new condition. Asking price: $58,000." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com/land-rover-for-sale" />
+
+    <link href="css/site.css" rel="stylesheet" />
+    
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Vehicle",
+          "name": "Land Rover For Sale",
+          "brand": {
+            "@type": "Brand",
+            "name": "Land Rover"
+          },
+          "vehicleCondition": "https://schema.org/UsedCondition",
+          "mileageFromOdometer": {
+            "@type": "QuantitativeValue",
+            "value": 148100,
+            "unitCode": "SMI"
+          },
+          "offers": {
+            "@type": "Offer",
+            "price": "58000",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "itemCondition": "https://schema.org/UsedCondition"
+          },
+          "description": "Land Rover for sale in like new condition with 148,100 miles. Asking price is $58,000."
+        }
+    </script>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <main class="page">
+        <section class="hero" aria-labelledby="main-title">
+            <div class="hero-header">
+                <span class="badge">Land Rover For Sale</span>
+                <h1 id="main-title">Like New Land Rover for Sale</h1>
+            </div>
+
+            <div class="hero-copy">
+                <p class="intro">
+                    This Land Rover is in like new condition and offers the luxury, capability,
+                    and presence the brand is known for. With 148,100 miles, it is ready for its next owner.
+                </p>
+
+                <div class="price">$58,000</div>
+                <p class="price-note">Asking price</p>
+
+                <a class="cta" href="tel:+10000000000" aria-label="Call about this Land Rover for sale">
+                    Call About This Land Rover
+                </a>
+            </div>
+
+            <div class="image-placeholder" role="img" aria-label="Photo area for Land Rover for sale">
+                <img id="RangeRoverPic" src="img/image1.jpeg"/>
+            </div>
+        </section>
+
+        <section class="thumbnail-gallery" aria-labelledby="thumbnail-gallery-title">
+            <h2 id="thumbnail-gallery-title">Land Rover Photo Gallery</h2>
+            <div id="thumbnails" style="display: flex; justify-content: space-around; flex-wrap:wrap;"></div>
+        </section>
+
+        <section class="details" aria-label="Land Rover sale details">
+            <article class="detail-card">
+                <h2>Mileage</h2>
+                <p>148,100 miles</p>
+            </article>
+            <article class="detail-card">
+                <h2>Condition</h2>
+                <p>Like New</p>
+            </article>
+            <article class="detail-card">
+                <h2>Price</h2>
+                <p>$58,000</p>
+            </article>
+        </section>
+
+        <section class="content">
+            <h2>About This Land Rover</h2>
+            <p>
+                This Land Rover for sale is a great choice for anyone looking for a premium SUV
+                with strong road presence, refined styling, and dependable capability. It has
+                been described as being in like new condition and has 148,100 miles.
+            </p>
+
+            <h2>Vehicle Highlights</h2>
+            <ul>
+                <li>Land Rover SUV for sale</li>
+                <li>Like new condition</li>
+                <li>148,100 miles</li>
+                <li>Asking price: $58,000</li>
+                <li>Premium, capable, and stylish vehicle</li>
+            </ul>
+
+            <h2>Interested?</h2>
+            <p>
+                Contact the seller today to ask questions, schedule a time to see the vehicle,
+                or make an offer on this Land Rover.
+            </p>
+        </section>
+
+        <footer>
+            <p>Land Rover for sale | 148,100 miles | Like new condition | Asking $58,000</p>
+        </footer>
+    </main>
+
+    <div id="lightbox" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;
+    background-color:rgba(0,0,0,0.8);text-align:center;">
+
+        <!-- Close button -->
+        <span onclick="closeModal()" style="color:white;position:absolute;top:20px;right:40px;
+        font-size:40px;cursor:pointer;">&times;</span>
+
+        <!-- Spinner -->
+        <div id="spinner" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+        width:50px;height:50px;border:6px solid #ccc;border-top-color:white;
+        border-radius:50%;animation:spin 1s linear infinite;"></div>
+
+        <!-- Image -->
+        <img id="lightbox-img" style="max-height: 90%; max-width: 98%; margin-top: 5%; display: none;">
+    </div>
+
+    <style>
+        @keyframes spin {
+            to {
+                transform: translate(-50%, -50%) rotate(360deg);
+            }
+        }
+    </style>
+
+    <script>
+        function openModal(src) {
+            const lightbox = document.getElementById("lightbox");
+            const img = document.getElementById("lightbox-img");
+            const spinner = document.getElementById("spinner");
+
+            // Show modal and spinner
+            lightbox.style.display = "block";
+            spinner.style.display = "block";
+            img.style.display = "none";
+
+            // Start loading the new image
+            img.src = src;
+
+            img.onload = function () {
+                // Hide spinner and show the loaded image
+                spinner.style.display = "none";
+                img.style.display = "inline";
+            };
+
+            img.onerror = function () {
+                spinner.style.display = "none";
+                img.style.display = "inline";
+                img.src = ""; // Optionally hide/break image on error
+            };
+        }
+
+        function closeModal() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+
+        let allImg = [
+            'image0.jpeg',
+            'image1.jpeg',
+            'image10.jpeg',
+            'image11.jpeg',
+            'image12.jpeg',
+            'image2.jpeg',
+            'image3blur.jpeg',
+            'image4blur.jpeg',
+            'image5.jpeg',
+            'image6.jpeg',
+            'image7.jpeg',
+            'image8.jpeg',
+            'image9.jpeg'
+        ];
+
+        let template = `
+                    <div style="width:200px; height:200px; display:flex; align-items:center; justify-content:center; background-color:#000000; cursor:pointer;border:1px #313131 solid;margin:10px">
+                        <img src="/img/tn_|IMG|"
+                        alt="A picture of the Land Rover"
+                        onclick="openModal('/img/|IMG|')"
+                        tablindex="|tabindex|"
+                        style="max-width:100%; max-height:100%; object-fit:contain;">
+                    </div>
+                    `;
+
+        function BuildImages() {
+            //console.log('BuildImages');
+            let img = "";
+            let out = '';
+
+            for (let i = 0; i < allImg.length; i++) {
+                let img = allImg[i];
+                let thisTemp = template;
+
+                thisTemp = thisTemp.replaceAll("|IMG|", img);
+                thisTemp = thisTemp.replaceAll("|tabindex|", i + 20);
+
+                out += thisTemp;
+
+                //console.log(thisTemp);
+            }
+
+            document.getElementById("thumbnails").innerHTML = out;
+        }
+
+        BuildImages();
+    </script>
+</body>
+</html>
